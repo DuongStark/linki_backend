@@ -14,16 +14,24 @@ router.post('/', authMiddleware, async (req, res) => {
 
 // Lấy tất cả từ của user hoặc chỉ các từ đến hạn nếu có dueDate
 router.get('/', authMiddleware, async (req, res) => {
-  const { dueDate } = req.query;
+  // Bỏ query dueDate, luôn lấy thẻ đến hạn (dueDate <= now)
   let query = { user: req.user.id };
-  if (dueDate) {
-    // Lấy các từ có srs.dueDate <= dueDate (tức là đến hạn hoặc quá hạn)
-    const endOfDay = new Date(dueDate);
-    endOfDay.setHours(23, 59, 59, 999);
-    query['srs.dueDate'] = { $lte: endOfDay };
-  }
+  const now = new Date();
+  query['srs.dueDate'] = { $lte: now };
   const cards = await VocabCard.find(query);
   res.json(cards);
+});
+
+// API: Thời gian (giờ, phút) đến thẻ due tiếp theo
+router.get('/next-due', authMiddleware, async (req, res) => {
+  const now = new Date();
+  const nextCard = await VocabCard.findOne({ user: req.user.id, 'srs.dueDate': { $gt: now } }).sort({ 'srs.dueDate': 1 });
+  if (!nextCard) return res.json({ hours: null, minutes: null });
+  const diffMs = nextCard.srs.dueDate - now;
+  const totalMinutes = Math.ceil(diffMs / 60000);
+  const hours = Math.floor(totalMinutes / 60);
+  const minutes = totalMinutes % 60;
+  res.json({ hours, minutes });
 });
 
 // Update từ

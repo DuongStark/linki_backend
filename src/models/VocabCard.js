@@ -18,7 +18,9 @@ const vocabCardSchema = new mongoose.Schema({
     interval: { type: Number, default: 1 }, // ngày
     repetitions: { type: Number, default: 0 },
     easeFactor: { type: Number, default: 2.5 },
-    dueDate: { type: Date, default: Date.now }
+    dueDate: { type: Date, default: Date.now },
+    state: { type: String, enum: ['new', 'learning', 'review'], default: 'new' },
+    learningStepIndex: { type: Number, default: 0 }
   },
   reviewHistory: [reviewHistorySchema]
 });
