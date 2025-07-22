@@ -14,10 +14,19 @@ router.post('/', authMiddleware, async (req, res) => {
 
 // Lấy tất cả từ của user hoặc chỉ các từ đến hạn nếu có dueDate
 router.get('/', authMiddleware, async (req, res) => {
-  // Bỏ query dueDate, luôn lấy thẻ đến hạn (dueDate <= now)
+  const { dueDate } = req.query;
   let query = { user: req.user.id };
-  const now = new Date();
-  query['srs.dueDate'] = { $lte: now };
+  if (dueDate) {
+    const now = new Date(dueDate);
+    query['srs.dueDate'] = { $lte: now };
+  }
+  const cards = await VocabCard.find(query);
+  res.json(cards);
+});
+
+// Lấy tất cả từ của user (không filter dueDate hay trạng thái) - dùng cho trang quản lý từ vựng
+router.get('/all', authMiddleware, async (req, res) => {
+  let query = { user: req.user.id };
   const cards = await VocabCard.find(query);
   res.json(cards);
 });
