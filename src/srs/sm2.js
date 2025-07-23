@@ -56,17 +56,30 @@ function sm2(card, grade) {
     }
     // Cập nhật easeFactor
     easeFactor = Math.max(1.3, easeFactor + (0.1 - (5 - grade) * (0.08 + (5 - grade) * 0.02)));
+    // Interval fuzzing: random hóa interval ±5% (hoặc ±1 ngày nếu interval > 20)
+    let fuzzedInterval = interval;
+    if (interval > 1) {
+      const fuzzPercent = 0.05;
+      let min = Math.floor(interval * (1 - fuzzPercent));
+      let max = Math.ceil(interval * (1 + fuzzPercent));
+      // Nếu interval lớn, đảm bảo fuzz ít nhất ±1 ngày
+      if (interval > 20) {
+        min = Math.min(min, interval - 1);
+        max = Math.max(max, interval + 1);
+      }
+      fuzzedInterval = Math.floor(Math.random() * (max - min + 1)) + min;
+    }
     // Tính ngày ôn tiếp theo
     dueDate = new Date();
-    dueDate.setDate(dueDate.getDate() + interval);
+    dueDate.setDate(dueDate.getDate() + fuzzedInterval);
     // Lưu lại lịch sử
     card.reviewHistory.push({
       date: new Date(),
       grade,
-      interval,
+      interval: fuzzedInterval,
       easeFactor
     });
-    card.srs = { interval, repetitions, easeFactor, dueDate, state, learningStepIndex };
+    card.srs = { interval: fuzzedInterval, repetitions, easeFactor, dueDate, state, learningStepIndex };
     return card;
   }
 }

@@ -1,0 +1,585 @@
+#separator:tab
+#html:false
+#tags column:7
+	agreement	(n)	əˈgrimənt		hợp đồng	
+	assurance	(n)	əˈʃʊrəns		bảo đảm	
+	cancellation	(n)	ˌkænsəˈleɪʃən		hủy bỏ	
+	determine	(v)	dɪˈtɜrmən		xác định	
+	engage	(v)	ɛnˈgeɪʤ		tham gia	
+	establish	(v)	ɪˈstæblɪʃ		thành lập	
+	obligate	(v)	ˈɑbləˌgeɪt		bắt buộc	
+	party	(n)	ˈpɑrti		bên	
+	provision	(n)	prəˈvɪʒən		sự cung cấp	
+	resolve	(v)	riˈzɑlv		giải quyết	
+	specific	(a)	spɪˈsɪfɪk		rõ ràng	
+	attract	(v)	əˈtrækt		thu hút	
+	compare	(v)	kəmˈpɛr		so sánh	
+	competition	(n)	ˌkɑmpəˈtɪʃən		cạnh tranh	
+	consume	(v)	kənˈsum		tiêu thụ	
+	convince	(v)	kənˈvɪns		thuyết phục	
+	currently	(adv)	ˈkɜrəntli		hiện tại	
+	fad	(n)	fæd		mốt nhất thời	
+	inspiration	(n)	ˌɪnspəˈreɪʃən		cảm hứng	
+	market	(v)	ˈmɑrkɪt		chào bán	
+	persuasion	(n)	pərˈsweɪʒən		thuyết phục	
+	productive	(a)	prəˈdʌktɪv		có năng suất	
+	satisfaction	(n)	ˌsætəˈsfækʃən		sự thỏa mãn	
+	characteristic	(n)	ˌkɛrəktəˈrɪstɪk		đặc điểm	
+	consequence	(n)	ˈkɑnsəkwəns		hậu quả	
+	consider	(v)	kənˈsɪdər		xem xét	
+	cover	(v)	ˈkʌvər		bảo hiểm	
+	expiration	(n)	ˌɛkspəˈreɪʃən		sự hết hạn	
+	frequently	(adv)	ˈfrikwəntli		thường xuyên	
+	imply	(v)	ɪmˈplaɪ		ngụ ý	
+	promise	(v)	ˈprɑməs		hứa hẹn	
+	protect	(v)	prəˈtɛkt		bảo vệ	
+	reputation	(n)	ˌrɛpjəˈteɪʃən		tiếng tăm	
+	require	(v)	ˌriˈkwaɪər		yêu cầu	
+	vary	(v)	ˈvɛri		thay đổi	
+	address	(n)	ˈæˌdrɛs		bài diễn văn	
+	avoid	(v)	əˈvɔɪd		tránh	
+	demonstrate	(v)	ˈdɛmənˌstreɪt		chứng minh	
+	develop	(v)	dɪˈvɛləp		phát triển	
+	evaluate	(v)	ɪˈvæljuˌeɪt		đánh giá	
+	gather	(v)	ˈgæðər		tập hợp	
+	offer	(v)	ˈɔfər		đề nghị	
+	primarily	(adv)	praɪˈmɛrəli		chủ yếu	
+	risk	(n)	rɪsk		rủi ro	
+	strategy	(n)	ˈstrætəʤi		chiến lược	
+	strong	(a)	strɔŋ		mạnh mẽ	
+	substitution	(n)	ˌsʌbstɪˈtuʃən		thay thế	
+	accommodate	(v)	əˈkɑməˌdeɪt		đáp ứng	
+	arrangement	(n)	əˈreɪnʤmənt		sắp xếp	
+	association	(n)	əˌsoʊsiˈeɪʃən		kết hợp	
+	attend	(v)	əˈtɛnd		tham dự	
+	get in touch	(v)	gɛt ɪn tʌʧ		liên lạc	
+	hold	(v)	hoʊld		chứa đựng	
+	location	(n)	loʊˈkeɪʃən		địa điểm	
+	overcrowded	(a)	ˈoʊvərˌkraʊdɪd		chật ních	
+	register	(v)	ˈrɛʤɪstər		đăng ký	
+	select	(v)	səˈlɛkt		chọn	
+	session	(n)	ˈsɛʃən		phiên, kỳ	
+	take part in	(v)	teɪk pɑrt ɪn		tham gia	
+	access	(v)	ˈækˌsɛs		truy cập	
+	allocate	(v)	ˈæləˌkeɪt		phân bổ	
+	compatible	(a)	kəmˈpætəbəl		tương thích	
+	delete	(v)	dɪˈlit		xóa	
+	display	(v)	dɪˈspleɪ		hiển thị	
+	duplicate	(v)	ˈdupləkət		sao chép chính xác	
+	failure	(n)	ˈfeɪljər		thất bại	
+	figure out	(v)	ˈfɪgjər aʊt		hiểu ra	
+	ignore	(v)	ɪgˈnɔr		lờ đi	
+	search	(v)	sɜrʧ		tìm kiếm	
+	shut down	(v)	ʃʌt daʊn		tắt máy	
+	warning	(n)	ˈwɔrnɪŋ		cảnh báo	
+	affordable	(a)	əˈfɔrdəbəl		chi trả được	
+	as needed	(adv)	æz ˈnidəd		cần thiết	
+	be in charge of	(v)	bi ɪn ʧɑrʤ ʌv		đảm nhiệm	
+	capacity	(n)	kəˈpæsəti		dung lượng	
+	durable	(a)	ˈdʊrəbəl		bền vững	
+	initiative	(n)	ɪˈnɪʃətɪv		bước đầu, sự khởi đầu	
+	physically	(adv)	ˈfɪzɪkəli		một cách vật lý	
+	provider	(n)	prəˈvaɪdər		nhà cung cấp	
+	recur	(v)	rɪˈkɜr		tái diễn	
+	reduction	(n)	rəˈdʌkʃən		sự giảm bớt	
+	stock	(v)	stɑk		tích trữ	
+	appreciation	(n)	əˌpriʃiˈeɪʃən		sự cảm kích	
+	bring in	(v)	brɪŋ ɪn		tuyển dụng	
+	casually	(adv)	ˈkæʒəwəli		bình thường, không trang trọng	
+	code	(n)	koʊd		quy tắc	
+	expose	(v)	ɪkˈspoʊz		giúp trải nghiệm	
+	glimpse	(n)	glɪmps		cái nhìn lướt qua	
+	outdated	(a)	ˈaʊtˌdeɪtɪd		lỗi thời	
+	practice	(v)	ˈpræktəs		luyện tập	
+	reinforce	(v)	ˌriɪnˈfɔrs		tăng cường	
+	verbal	(a)	ˈvɜrbəl		bằng lời nói	
+	disk	(n)	dɪsk		đĩa	
+	facilitate	(v)	fəˈsɪləˌteɪt		làm cho thuận tiện	
+	network	(n)	ˈnɛˌtwɜrk		mạng lưới	
+	popularity	(n)	ˌpɑpjəˈlɛrəti		tính phổ biến	
+	process	(v)	ˈprɑˌsɛs		xử lý	
+	replace	(v)	ˌriˈpleɪs		thay thế	
+	revolution	(n)	ˌrɛvəˈluʃən		cuộc cách mạng	
+	sharp	(a)	ʃɑrp		nhạy bén, thông minh	
+	skill	(n)	skɪl		kỹ năng	
+	software	(n)	ˈsɔfˌtwɛr		phần mềm	
+	store	(v)	stɔr		lưu trữ	
+	technical	(a)	ˈtɛknɪkəl		thuộc về kỹ thuật	
+	assemble	(v)	əˈsɛmbəl		tập hợp	
+	beforehand	(adv)	bɪˈfɔrˌhænd		trước, từ trước	
+	complication	(n)	ˌkɑmpləˈkeɪʃən		sự phức tạp	
+	courier	(n)	ˈkɜriər		người đưa thư, chuyển phát	
+	express	(a)	ɪkˈsprɛs		tốc hành	
+	fold	(v)	foʊld		gấp, gập	
+	layout	(n)	ˈleɪˌaʊt		cách bố trí	
+	mention	(v)	ˈmɛnʃən		đề cập	
+	petition	(n)	pəˈtɪʃən		sự kiến nghị	
+	proof	(n)	pruf		tìm lỗi	
+	revise	(v)	rɪˈvaɪz		sửa lại	
+	abundant	(a)	əˈbʌndənt		rất nhiều	
+	accomplish	(v)	əˈkɑmplɪʃ		hoàn thành	
+	bring together	(v)	brɪŋ təˈgɛðər		tập hợp lại	
+	candidate	(n)	ˈkændədeɪt		ứng viên	
+	come up with	(v)	kʌm ʌp wɪð		nghĩ ra	
+	commensurate	(a)	kəˈmɛnsərət		tương xứng với	
+	match	(n)	mæʧ		sự tương xứng, thích hợp	
+	profile	(n)	ˈproʊˌfaɪl		mô tả sơ lược	
+	qualification	(n)	ˌkwɑləfəˈkeɪʃən		phẩm chất, tư cách, khả năng	
+	recruit	(v)	rəˈkrut		tuyển dụng	
+	submit	(v)	səbˈmɪt		nộp	
+	time-consuming	(a)	taɪm-kənˈsumɪŋ		tốn nhiều thời gian	
+	ability	(n)	əˈbɪləti		khả năng	
+	appty	(v)	appty		xin việc	
+	background	(n)	ˈbækˌgraʊnd		kiến thức, kinh nghiệm	
+	call in	(v)	kɔl ɪn		gọi vào	
+	confidence	(n)	ˈkɑnfədəns		sự tự tin	
+	constantly	(adv)	ˈkɑnstəntli		liên tục	
+	expert	(n)	ˈɛkspərt		chuyên gia	
+	hesitant	(a)	ˈhɛzɪtənt		lưỡng lự	
+	present	(v)	ˈprɛzənt		trình bày	
+	weakness	(n)	ˈwiknəs		điểm yếu	
+	conduct	(v)	ˈkɑndʌkt		tiến hành	
+	generate	(v)	ˈʤɛnəˌreɪt		tạo ra	
+	hire	(v)	ˈhaɪər		thuê	
+	mentor	(n)	ˈmɛnˌtɔr		người cố vấn	
+	reject	(v)	ˈriʤɛkt		từ chối	
+	success	(n)	səkˈsɛs		sự thành công	
+	training	(n)	ˈtreɪnɪŋ		tập huấn	
+	update	(v)	əpˈdeɪt		cập nhật	
+	basis	(n)	ˈbeɪsəs		nền tảng	
+	benefit	(n)	ˈbɛnəfɪt		lợi ích	
+	compensate	(v)	ˈkɑmpənˌseɪt		bù đắp	
+	delicately	(v)	ˈdɛləkətli		một cách khéo léo	
+	eligible	(a)	ˈɛləʤəbəl		đủ tư cách	
+	flexible	(a)	ˈflɛksəbəl		linh động	
+	negotiate	(v)	nəˈgoʊʃiˌeɪt		thương lượng	
+	raise	(n)	reɪz		sư tăng lương	
+	retire	(v)	rɪˈtaɪr		nghỉ hưu	
+	vest	(v)	vɛst		trao quyền cho	
+	wage	(n)	weɪʤ		tiền lương	
+	achievement	(n)	əˈʧivmənt		thành tựu	
+	contribute	(v)	kənˈtrɪbjut		đóng góp	
+	dedication	(n)	ˌdɛdəˈkeɪʃən		sự cống hiến	
+	loyal	(a)	ˈlɔɪəl		trung thành	
+	merit	(n)	ˈmɛrət		sự xuất sắc	
+	obvious	(a)	ˈɑbviəs		rõ ràng	
+	promote	(v)	prəˈmoʊt		thăng chức	
+	recognition	(n)	ˌrɛkəgˈnɪʃən		sự công nhận	
+	value	(v)	ˈvælju		định giá	
+	bargain	(v)	ˈbɑrgən		mặc cả	
+	bear	(v)	bɛr		chịu đựng	
+	behavior	(n)	bɪˈheɪvjər		cách cư xử	
+	checkout	(n)	ˈʧɛˌkaʊt		quầy thanh toán	
+	comfort	(v)	ˈkʌmfərt		an ủi	
+	expand	(v)	ɪkˈspænd		mở rộng	
+	explore	(v)	ɪkˈsplɔr		khám phá	
+	item	(n)	ˈaɪtəm		món hàng	
+	mandatory	(a)	ˈmændəˌtɔri		bắt buộc	
+	merchandise	(n)	ˈmɜrʧənˌdaɪz		hàng hóa	
+	strict	(a)	strɪkt		nghiêm ngặt	
+	trend	(n)	trɛnd		xu hướng	
+	diversify	(v)	daɪˈvɜrsəˌfaɪ		đa dạng hóa	
+	enterprise	(n)	ˈɛntərˌpraɪz		công ty	
+	essential	(a)	ɪˈsɛnʃəl		thiết yếu	
+	function	(v)	ˈfʌŋkʃən		hoạt động	
+	maintain	(v)	meɪnˈteɪn		duy trì	
+	obtain	(v)	əbˈteɪn		thu được	
+	prerequisite	(n)	priˈrɛkwəzət		điều kiện tiên quyết	
+	quality	(n)	ˈkwɑləti		chất lượng	
+	smooth	(a)	smuð		trôi chảy, suôn sẻ	
+	source	(n)	sɔrs		nguồn	
+	stationery	(n)	ˈsteɪʃəˌnɛri		văn phòng phẩm	
+	accurately	(adv)	ˈækjərətli		chính xác	
+	carrier	(n)	ˈkæriər		người vận chuyển, hãng vận chuyển	
+	catalog	(n)	ˈkætəlɔg		danh mục	
+	fulfill	(v)	fʊlˈfɪl		hoàn thành	
+	integral	(adj)	ˈɪntəgrəl		thiết yếu	
+	inventory	(n)	ˌɪnvənˈtɔri		hàng tồn kho	
+	minimize	(v)	ˈmɪnəˌmaɪz		giảm thiểu	
+	on hand	(adj)	ɑn hænd		sẵn có	
+	remember	(v)	rɪˈmɛmbər		nhớ	
+	ship	(v)	ʃɪp		giao hàng	
+	sufficiently	(adv)	səˈfɪʃəntli		đầy đủ	
+	supply	(n)	səˈplaɪ		nguồn hàng	
+	charge	(v)	ʧɑrʤ		tính phí	
+	compile	(v)	kəmˈpaɪl		tổng hợp	
+	customer	(n)	ˈkʌstəmər		khách hàng	
+	discount	(n)	dɪˈskaʊnt		giảm giá	
+	efficient	(adj)	ɪˈfɪʃənt		hiệu quả	
+	estimate	(v)	ˈɛstəmət		ước lượng	
+	impose	(v)	ɪmˈpoʊz		bắt buộc	
+	mistake	(n)	mɪsˈteɪk		nhầm lẫn	
+	order	(n)	ˈɔrdər		đơn đặt hàng	
+	promptly	(adv)	ˈprɑmptli		đúng lúc	
+	rectify	(v)	ˈrɛktəˌfaɪ		sửa chữa	
+	terms	(n)	tɜrmz		điều kiện	
+	adjustment	(n)	əˈʤʌstmənt		điều chỉnh	
+	automatically	(adv)	ˌɔtəˈmætɪkli		tự động	
+	crucial	(adj)	ˈkruʃəl		then chốt	
+	discrepancy	(n)	dɪˈskrɛpənsi		khác biệt	
+	disturb	(v)	dɪˈstɜrb		làm phiền	
+	liability	(n)	ˌlaɪəˈbɪlɪti		nghĩa vụ, trách nhiệm	
+	reflection	(n)	rəˈflɛkʃən		ảnh phản chiếu	
+	run	(v)	rʌn		vận hành, thực hiện	
+	scan	(v)	skæn		xem lướt qua	
+	subtract	(v)	səbˈtrækt		trừ đi	
+	tedious	(adj)	ˈtidiəs		tẻ nhạt, chán	
+	verify	(v)	ˈvɛrəˌfaɪ		xác thực	
+	accept	(v)	ækˈsɛpt		chấp nhận	
+	balance	(n)	ˈbæləns		tiền trong tài khoản	
+	borrow	(v)	ˈbɑˌroʊ		mượn, vay	
+	cautiously	(adv)	ˈkɔʃəsli		thận trọng	
+	deduct	(v)	dɪˈdʌkt		khấu trừ	
+	dividend	(n)	ˈdɪvɪˌdɛnd		lãi từ cổ phần	
+	down payment	(n)	daʊn ˈpeɪmənt		phần tiền trả trước	
+	mortgage	(n)	ˈmɔrgəʤ		trả góp (thế chấp)	
+	restricted	(adj)	riˈstrɪktəd		hạn chế	
+	signature	(n)	ˈsɪgnəʧər		chữ ký	
+	take out	(v)	teɪk aʊt		lấy ra, rút ra	
+	transaction	(n)	trænˈzækʃən		thương vụ, giao dịch	
+	accounting	(n)	əˈkaʊntɪŋ		kế toán	
+	accumulate	(v)	əˈkjumjəˌleɪt		tích lũy, thu thập	
+	asset	(n)	ˈæˌsɛt		tài sản	
+	audit	(n)	ˈɔdɪt		kiểm toán	
+	budget	(n)	ˈbʌʤɪt		ngân sách	
+	build up	(v)	bɪld ʌp		gia tăng	
+	client	(n)	ˈklaɪənt		khách hàng (của dịch vụ)	
+	debt	(n)	dɛt		món nợ	
+	outstanding	(adj)	ˌaʊtˈstændɪŋ		còn tồn đọng, chưa giải quyết	
+	profitably	(adv)	ˈprɑfətəbli		có lợi, sinh lời	
+	reconcile	(v)	ˈrɛkənˌsaɪl		cân đối	
+	turnover	(n)	ˈtɜrˌnoʊvər		doanh thu	
+	aggressively	(adv)	əˈgrɛsɪvli		hùng hổ, hung hăng	
+	attitude	(n)	ˈætəˌtud		thái độ	
+	commit	(v)	kəˈmɪt		cam kết	
+	conservative	(adj)	kənˈsɜrvətɪv		bảo thủ, dè dặt	
+	fund	(n)	fʌnd		quỹ	
+	invest	(v)	ɪnˈvɛst		đầu tư	
+	long-term	(adj)	ˈlɔŋˈtɜrm		dài hạn, lâu dài	
+	portfolio	(n)	pɔrtˈfoʊliˌoʊ		danh sách vốn đầu tư	
+	pull out	(v)	pʊl aʊt		rút khỏi, ngừng tham gia	
+	resource	(n)	ˈrisɔrs		tài nguyên, nguồn lực	
+	return	(n)	rɪˈtɜrn		lợi nhuận	
+	wisely	(adj)	ˈwaɪzli		một cách khôn ngoan	
+	calculation	(n)	ˌkælkjəˈleɪʃən		tính toán, đo lường	
+	deadline	(n)	ˈdɛˌdlaɪn		hạn chót	
+	file	(v)	faɪl		đệ trình, kê khai	
+	fill out	(v)	fɪl aʊt		hoàn thành	
+	give up	(v)	gɪv ʌp		bỏ, ngưng	
+	joint	(adj)	ʤɔɪnt		chung	
+	owe	(v)	oʊ		nợ	
+	penalty	(n)	ˈpɛnəlti		hình phạt, án phạt	
+	preparation	(n)	ˌprɛpəˈreɪʃən		sự chuẩn bị	
+	refund	(n)	ˈriˌfʌnd		hoàn trả	
+	spouse	(n)	spaʊs		người bạn đời	
+	withhold	(v)	wɪθˈhoʊld		giấu, giữ lại	
+	desire	(v)	dɪˈzaɪər		ước muốn	
+	detail	(v)	dɪˈteɪl		trình bày chi tiết	
+	forecast	(n)	ˈfɔrˌkæst		dự báo	
+	level	(n)	ˈlɛvəl		mức độ	
+	overall	(adj)	ˈoʊvəˌrɔl		tổng quan	
+	perspective	(n)	pərˈspɛktɪv		quan điểm, cái nhìn	
+	project	(v)	ˈprɑʤɛkt		dự đoán	
+	realistic	(adj)	ˌriəˈlɪstɪk		thực tế	
+	target	(v)	ˈtɑrgət		nhắm đến	
+	translation	(n)	trænˈzleɪʃən		biên dịch	
+	typically	(adv)	ˈtɪpɪkli		đặc thù	
+	yield	(n)	jild		lợi tức	
+	adjacent	(adj)	əˈʤeɪsənt		kế bên	
+	collaboration	(n)	kəˌlæbəˈreɪʃən		cộng tác	
+	concentrate	(v)	ˈkɑnsənˌtreɪt		tập trung	
+	conductive	(adj)	kənˈdʌktɪv		hữu ích (có tính dẫn truyền)	
+	disruption	(n)	dɪsˈrʌpʃən		cắt ngang	
+	hamper	(v)	ˈhæmpər		cản trở	
+	inconsiderately	(adv)	inconsiderately		vô ý tứ, vô lễ	
+	lobby	(n)	ˈlɑbi		tiền sảnh	
+	move up	(v)	muv ʌp		tiến lên, thăng tiến	
+	open to	(adj)	ˈoʊpən tu		dễ bị...	
+	opt	(v)	ɑpt		chọn	
+	scrutiny	(n)	ˈskrutəni		sự kiểm soát chặt chẽ	
+	adhere to	(v)	ədˈhɪr tu		tuân thủ, tôn trọng	
+	agenda	(n)	əˈʤɛndə		chương trình nghị sự	
+	bring up	(v)	brɪŋ ʌp		nêu lên	
+	conclude	(v)	kənˈklud		kết thúc, kết luận	
+	go ahead	(v)	goʊ əˈhɛd		tiếp tục	
+	goal	(n)	goʊl		mục tiêu	
+	lengthy	(a)	ˈlɛŋθi		dài dòng	
+	matter	(n)	ˈmætər		vấn đề	
+	periodically	(adv)	ˌpiriˈɑdɪkəli		định kỳ	
+	priority	(n)	praɪˈɔrəti		ưu tiên	
+	progress	(n)	ˈprɑˌgrɛs		sự tiến triển	
+	waste	(v)	weɪst		lãng phí	
+	brand	(n)	brænd		nhãn hiệu	
+	conform	(v)	kənˈfɔrm		tuân theo	
+	defect	(n)	ˈdifɛkt		sai sót	
+	enhance	(v)	ɛnˈhæns		tăng cường	
+	garment	(n)	ˈgɑrmənt		hàng may mặc	
+	inspect	(v)	ɪnˈspɛkt		kiểm tra	
+	perceptive	(a)	pərˈsɛptɪv		mẫn cảm, sâu sắc	
+	repel	(v)	rɪˈpɛl		chống	
+	take back	(v)	teɪk bæk		trả lại	
+	throw out	(v)	θroʊ aʊt		loại bỏ	
+	uniformly	(adv)	ˈjunəˌfɔrmli		giống nhau	
+	wrinkle	(n)	ˈrɪŋkəl		nếp nhăn	
+	anxious	(a)	ˈæŋkʃəs		lo lắng	
+	ascertain	(v)	ˌæsərˈteɪn		tìm hiểu chắc chắn	
+	assume	(v)	əˈsum		đảm đương	
+	decade	(n)	dɛˈkeɪd		thập kỷ	
+	examine	(v)	ɪgˈzæmɪn		xem xét	
+	experiment	(n)	ɪkˈspɛrəmənt		thử nghiệm	
+	logical	(a)	ˈlɑʤɪkəl		hợp lý	
+	research	(n)	riˈsɜrʧ		sự nghiên cứu	
+	responsibility	(n)	riˌspɑnsəˈbɪləti		trách nhiệm	
+	solve	(v)	sɑlv		giải quyết	
+	supervisor	(n)	ˈsupərˌvaɪzər		người giám sát	
+	systematically	(adv)	ˌsɪstəˈmætɪkli		một cách có hệ thống	
+	apprehensive	(a)	ˌæprɪˈhɛnsɪv		lo ngại	
+	circumstance	(n)	ˈsɜrkəmˌstæns		hoàn cảnh	
+	condition	(n)	kənˈdɪʃən		điều kiện	
+	due to	(prep)	du tu		bởi vì	
+	fluctuate	(v)	ˈflʌkʧəˌweɪt		dao động	
+	get out of	(v)	gɛt aʊt ʌv		thoát khỏi	
+	indicator	(n)	ˈɪndəˌkeɪtər		chỉ thị	
+	lease	(n)	lis		hợp đồng cho thuê	
+	lock into	(v)	lɑk ˈɪntu		cam kết	
+	occupy	(v)	ˈɑkjəˌpaɪ		cư ngụ	
+	option	(n)	ˈɑpʃən		lựa chọn	
+	subject to	(v)	ˈsʌbʤɪkt tu		phụ thuộc	
+	appeal	(n)	əˈpil		sức lôi cuốn	
+	arrive	(v)	əˈraɪv		đến nơi	
+	compromise	(n)	ˈkɑmprəˌmaɪz		sự thỏa hiệp	
+	daringly	(adv)	ˈdɛrɪŋli		dũng cảm	
+	familiar	(a)	fəˈmɪljər		quen thuộc	
+	guide	(n)	gaɪd		hướng dẫn viên	
+	majority	(n)	məˈʤɔrəti		đa số	
+	mix	(v)	mɪks		trộn lẫn	
+	rely	(v)	rɪˈlaɪ		tin tưởng	
+	secure	(v)	sɪˈkjʊr		chiếm được, đạt được	
+	subjective	(a)	səbˈʤɛktɪv		chủ quan	
+	suggestion	(n)	səgˈʤɛsʧən		lời đề nghị	
+	basic	(a)	ˈbeɪsɪk		cơ bản	
+	complete	(v)	kəmˈplit		hoàn thành	
+	excite	(v)	ɪkˈsaɪt		kích thích	
+	flavor	(n)	ˈfleɪvər		mùi vị	
+	forget	(v)	fərˈgɛt		quên	
+	ingredient	(n)	ɪnˈgridiənt		thành phần	
+	judge	(v)	ʤʌʤ		đánh giá	
+	mix-up	(n)	mɪks-ʌp		sự lẫn lộn	
+	patron	(n)	ˈpeɪtrən		khách hàng thường xuyên	
+	predict	(v)	prɪˈdɪkt		tiên đoán	
+	randomly	(adv)	ˈrændəmli		ngẫu nhiên	
+	remind	(v)	riˈmaɪnd		nhắc nhở	
+	burden	(n)	ˈbɜrdən		trách nhiệm	
+	commonly	(adv)	ˈkɑmənli		thường	
+	delivery	(n)	dɪˈlɪvəri		sự giao hàng	
+	elegance	(n)	ˈɛləgəns		sự tinh tế	
+	fall to	(v)	fɔl tu		thuộc trách nhiệm	
+	impress	(v)	ˈɪmˌprɛs		gây ấn tượng	
+	individual	(a)	ˌɪndəˈvɪʤəwəl		cá nhân	
+	list	(n)	lɪst		danh sách	
+	multiple	(a)	ˈmʌltəpəl		nhiều phần	
+	narrow	(v)	ˈnɛroʊ		giới hạn	
+	pick up	(v)	pɪk ʌp		đi lấy	
+	settle	(v)	ˈsɛtəl		thanh toán	
+	accustom to	(v)	əˈkʌstəm tu		làm quen với	
+	apprentice	(n)	əˈprɛntəs		người học việc	
+	culinary	(a)	ˈkjulɪˌnɛri		thuộc việc nấu nướng	
+	demand	(v)	dɪˈmænd		yêu cầu	
+	draw	(v)	drɔ		thu hút	
+	incorporate	(v)	ɪnˈkɔrpərɪt		kết hợp vào	
+	influx	(n)	ˈɪnˌflʌks		dòng đi vào	
+	method	(n)	ˈmɛθəd		phương pháp	
+	outlet	(n)	ˈaʊtˌlɛt		phương tiện thể hiện	
+	profession	(n)	prəˈfɛʃən		nghề nghiệp	
+	relinquish	(v)	rɪˈlɪŋkwɪʃ		từ bỏ	
+	theme	(n)	θim		chủ đề	
+	assist	(v)	əˈsɪst		trợ giúp	
+	coordinate	(v)	koʊˈɔrdənət		phối hợp, điều phối	
+	dimension	(n)	dɪˈmɛnʃən		kích thước	
+	exact	(adj)	ɪgˈzækt		chính xác	
+	general	(adj)	ˈʤɛnərəl		tổng quát	
+	ideally	(adv)	aɪˈdili		lý tưởng	
+	lead time	(n)	lid taɪm		thời gian tiến hành	
+	plan	(v)	plæn		lên kế hoạch	
+	proximity	(n)	prɑkˈsɪməti		sự gần	
+	regulate	(v)	ˈrɛgjəˌleɪt		quy định	
+	site	(n)	saɪt		địa điểm	
+	stage	(v)	steɪʤ		tổ chức	
+	agent	(n)	ˈeɪʤənt		đại lý	
+	announcement	(n)	əˈnaʊnsmənt		thông báo	
+	beverage	(n)	ˈbɛvərɪʤ		thức uống	
+	blanket	(n)	ˈblæŋkət		chăn	
+	board	(v)	bɔrd		lên tàu	
+	claim	(v)	kleɪm		nhận	
+	delay	(v)	dɪˈleɪ		trì hoãn	
+	depart	(v)	dɪˈpɑrt		khởi hành	
+	embarkation	(n)	ˌɛmbɑrˈkeɪʃən		sự cho lên tàu	
+	itinerary	(n)	aɪˈtɪnəˌrɛri		hành trình	
+	prohibit	(v)	proʊˈhɪbət		cấm	
+	valid	(adj)	ˈvæləd		có hiệu lực	
+	deal with	(v)	dil wɪð		xử trí	
+	destination	(n)	ˌdɛstəˈneɪʃən		điểm đến	
+	distinguish	(v)	dɪˈstɪŋgwɪʃ		phân biệt	
+	economize	(v)	ɪˈkɑnəˌmaɪz		tiết kiệm	
+	equivalent	(adj)	ɪˈkwɪvələnt		tương đương	
+	excursion	(n)	ɪkˈskɜrʒən		chuyến tham quan	
+	expense	(n)	ɪkˈspɛns		phí tổn	
+	extend	(v)	ɪkˈstɛnd		gia hạn	
+	prospective	(adj)	prəˈspɛktɪv		có triển vọng	
+	situation	(n)	ˌsɪʧuˈeɪʃən		tình hình	
+	substantially	(adv)	səbˈstænʃəli		một cách đáng kể	
+	system	(n)	ˈsɪstəm		hệ thống	
+	comprehensive	(adj)	ˌkɑmpriˈhɛnsɪv		toàn diện	
+	deluxe	(adj)	dəˈlʌks		sang trọng	
+	directory	(n)	dəˈrɛktəri		sách hướng dẫn	
+	duration	(n)	ˈdʊˈreɪʃən		khoảng thời gian	
+	entitle	(v)	ɛnˈtaɪtəl		cho phép	
+	fare	(n)	fɛr		tiền vé	
+	offset	(v)	ɔfˈsɛt		bù lại	
+	operate	(v)	ˈɑpəˌreɪt		hoạt động	
+	punctually	(adv)	ˈpʌŋkʧuəli		đúng giờ	
+	relatively	(adv)	ˈrɛlətɪvli		tương đối	
+	remainder	(n)	rɪˈmeɪndər		phần còn lại	
+	remote	(adj)	rɪˈmoʊt		hẻo lánh	
+	advanced	(adj)	ədˈvænst		tiên tiến	
+	chain	(n)	ʧeɪn		chuỗi	
+	check in	(v)	ʧɛk ɪn		đăng ký khi đến	
+	confirm	(v)	kənˈfɜrm		xác nhận	
+	expect	(v)	ɪkˈspɛkt		trông đợi	
+	housekeeper	(n)	ˈhaʊˌskipər		nhân viên dọn phòng	
+	notify	(v)	ˈnoʊtəˌfaɪ		thông báo	
+	preclude	(v)	prɪˈklud		ngăn cản	
+	reservation	(n)	ˌrɛzərˈveɪʃən		sự đặt chỗ trước	
+	quote	(v)	kwoʊt		báo giá	
+	rate	(n)	reɪt		mức giá	
+	service	(n)	ˈsɜrvəs		dịch vụ	
+	busy	(adj)	ˈbɪzi		bận rộn	
+	coincide	(v)	ˌkoʊɪnˈsaɪd		xảy ra đồng thời	
+	confusion	(n)	kənˈfjuʒən		sự lẫn lộn	
+	contact	(v)	ˈkɑnˌtækt		liên hệ	
+	disappoint	(v)	ˌdɪsəˈpɔɪnt		gây thất vọng	
+	intend	(v)	ɪnˈtɛnd		dự định	
+	license	(n)	ˈlaɪsəns		giấy phép	
+	nervously	(adv)	ˈnɜrvəsli		lo lắng	
+	optional	(adj)	ˈɑpʃənəl		tùy ý	
+	tempt	(v)	tɛmpt		lôi cuốn	
+	thrill	(n)	θrɪl		sự hưng phấn	
+	tier	(n)	ˈtaɪər		hạng	
+	attainment	(n)	əˈteɪnmənt		thành tựu	
+	combine	(v)	ˈkɑmbaɪn		kết hợp	
+	continue	(v)	kənˈtɪnju		tiếp tục	
+	description	(n)	dɪˈskrɪpʃən		sự mô tả	
+	disperse	(v)	dɪˈspɜrs		giải tán	
+	entertainment	(n)	ˌɛntərˈteɪnmənt		sự giải trí	
+	influence	(v)	ˈɪnfluəns		ảnh hưởng	
+	range	(n)	reɪnʤ		phạm vi	
+	release	(v)	riˈlis		phát hành	
+	representation	(n)	ˌrɛprəzɛnˈteɪʃən		sự miêu tả	
+	separately	(adv)	ˈsɛpərətli		riêng rẽ	
+	successive	(adj)	səkˈsɛsɪv		liên tiếp	
+	action	(n)	ˈækʃən		diễn biến	
+	approach	(v)	əˈproʊʧ		tiếp cận	
+	audience	(n)	ˈɑdiəns		khán giả	
+	creative	(adj)	kriˈeɪtɪv		sáng tạo	
+	dialogue	(n)	ˈdaɪəˌlɔg		cuộc đối thoại	
+	element	(n)	ˈɛləmənt		yếu tố	
+	experience	(n)	ɪkˈspɪriəns		trải nghiệm	
+	occur	(v)	əˈkɜr		xảy ra	
+	perform	(v)	pərˈfɔrm		trình diễn	
+	rehearse	(v)	riˈhɜrs		diễn tập	
+	review	(n)	ˌriˈvju		bài phê bình	
+	sell out	(v)	sɛl aʊt		bán hết sạch vé	
+	available	(adj)	əˈveɪləbəl		sẵn có (để dùng)	
+	broaden	(v)	ˈbrɔdən		mở rộng	
+	category	(n)	ˈkætəˌgɔri		hạng mục	
+	disparate	(adj)	ˈdɪspərɪt		khác hẳn nhau	
+	divide	(v)	dɪˈvaɪd		phân chia	
+	favor	(v)	ˈfeɪvər		yêu thích	
+	instinct	(n)	ˈɪnstɪŋkt		bản năng	
+	prefer	(v)	prəˈfɜr		thích hơn	
+	reason	(n)	ˈrizən		lý do	
+	relaxation	(n)	ˌrilækˈseɪʃən		sự thư giãn	
+	taste	(n)	teɪst		khiếu thẩm mỹ	
+	urge	(v)	ɜrʤ		thúc giục	
+	acquire	(v)	əˈkwaɪər		giành được	
+	admire	(v)	ædˈmaɪr		ngưỡng mộ	
+	collection	(n)	kəˈlɛkʃən		bộ sưu tập	
+	criticism	(n)	ˈkrɪtɪˌsɪzəm		sự phê bình	
+	fashion	(n)	ˈfæʃən		thời trang	
+	leisure	(n)	ˈlɛʒər		thời gian nhàn rỗi	
+	respond	(v)	rɪˈspɑnd		trả lời	
+	schedule	(v)	ˈskɛʤʊl		lên lịch trình	
+	significant	(adj)	səgˈnɪfɪkənt		quan trọng	
+	specialize	(v)	ˈspɛʃəˌlaɪz		chuyên về	
+	spectrum	(n)	ˈspɛktrəm		dãy, chuỗi	
+	assignment	(n)	əˈsaɪnmənt		việc được giao	
+	choose	(v)	ʧuz		lựa chọn	
+	constitute	(v)	ˈkɑnstəˌtut		cấu thành, tạo thành	
+	decision	(n)	dɪˈsɪʒən		quyết định	
+	disseminate	(v)	dɪˈsɛməˌneɪt		phổ biến	
+	impact	(n)	ˈɪmpækt		ảnh hưởng	
+	in-depth	(adj)	ɪn-dɛpθ		toàn diện	
+	investigate	(v)	ɪnˈvɛstəˌgeɪt		điều tra	
+	link	(n)	lɪŋk		mối liên hệ	
+	subscribe	(v)	səbˈskraɪb		đặt mua báo	
+	thorough	(adj)	ˈθɜroʊ		hoàn toàn, kỹ lưỡng	
+	annually	(adv)	ˈænjuəli		hàng năm	
+	appointment	(n)	əˈpɔɪntmənt		cuộc hẹn	
+	assess	(v)	əˈsɛs		đánh giá	
+	diagnose	(v)	ˌdaɪəgˈnoʊs		chẩn đoán	
+	effective	(adj)	ɪˈfɛktɪv		hiệu quả	
+	instrument	(n)	ˈɪnstrəmənt		dụng cụ	
+	manage	(v)	ˈmænəʤ		xoay sở	
+	prevent	(v)	prɪˈvɛnt		ngăn ngừa	
+	recommendation	(n)	ˌrɛkəmənˈdeɪʃən		lời khuyên	
+	record	(n)	ˈrɛkərd		hồ sơ	
+	refer	(v)	rəˈfɜr		chỉ dẫn (ai) đến	
+	serious	(adj)	ˈsɪriəs		nghiêm túc	
+	aware	(adj)	əˈwɛr		nhận thức	
+	catch up	(v)	kæʧ ʌp		cập nhật	
+	distraction	(n)	dɪˈstrækʃən		sự sao lãng	
+	encouragement	(n)	ɛnˈkɜrɪʤmənt		sự khuyến khích	
+	evident	(adj)	ˈɛvədənt		rõ rệt	
+	habit	(n)	ˈhæbət		thói quen	
+	illuminate	(v)	ɪˈlumɪnɪt		chiếu sáng	
+	irritate	(v)	ˈɪrɪˌteɪt		làm rát	
+	overview	(n)	ˈoʊvərˌvju		tổng quan	
+	position	(n)	pəˈzɪʃən		vị trí	
+	regularly	(adv)	ˈrɛgjələrli		đều đặn	
+	restore	(v)	rɪˈstɔr		khôi phục	
+	allow	(v)	əˈlaʊ		cho phép	
+	alternative	(adj)	ɔlˈtɜrnətɪv		thay thế	
+	aspect	(n)	ˈæˌspɛkt		khía cạnh, mặt	
+	concern	(n)	kənˈsɜrn		sự lo ngại	
+	emphasize	(v)	ˈɛmfəˌsaɪz		nhấn mạnh	
+	incur	(v)	ɪnˈkɜr		gánh chịu	
+	personnel	(n)	ˌpɜrsəˈnɛl		nhân viên	
+	policy	(n)	ˈpɑləsi		chính sách	
+	portion	(n)	ˈpɔrʃən		phần chia	
+	regardless	(adv)	rəˈgɑrdləs		bất chấp	
+	salary	(n)	ˈsæləri		tiền lương	
+	suit	(v)	sut		hợp với	
+	admit	(v)	ədˈmɪt		nhận vào	
+	authorize	(v)	ˈɔθəˌraɪz		chấp thuận	
+	designate	(v)	ˈdɛzɪgnɪt		chỉ rõ	
+	escort	(n)	ˈɛskɔrt		người đi theo	
+	identify	(v)	aɪˈdɛntəˌfaɪ		nhận diện	
+	mission	(n)	ˈmɪʃən		nhiệm vụ	
+	permit	(v)	ˈpɜrˌmɪt		cho phép	
+	pertinent	(adj)	ˈpɜrtɪnɪnt		có liên quan	
+	procedure	(n)	prəˈsiʤər		quy trình	
+	result	(n)	rɪˈzʌlt		kết quả	
+	statement	(n)	ˈsteɪtmənt		bản kê	
+	usually	(adv)	ˈjuʒəwəli		thường thường	
+	consult	(v)	kənˈsʌlt		tham khảo	
+	control	(v)	kənˈtroʊl		kiểm soát	
+	convenient	(adj)	kənˈvinjənt		thuận lợi	
+	detect	(v)	dɪˈtɛkt		tìm ra	
+	factor	(n)	ˈfæktər		nhân tố	
+	interaction	(n)	ˌɪntəˈrækʃən		sự tương tác	
+	limit	(n)	ˈlɪmət		giới hạn	
+	monitor	(v)	ˈmɑnətər		giám sát	
+	potential	(adj)	pəˈtɛnʃəl		tiềm tàng	
+	sample	(n)	ˈsæmpəl		mẫu thử	
+	sense	(n)	sɛns		khả năng phán đoán	
+	volunteer	(v)	ˌvɑlənˈtɪr		tình nguyện	
