@@ -1,18 +1,18 @@
 // SM-2 Algorithm for SRS
 // Learning steps (phút)
 const LEARNING_STEPS = [1, 10];
+const EASY_INTERVAL = 4; // ngày, mặc định cho Easy
 
 function sm2(card, grade) {
   let { interval, repetitions, easeFactor, state, learningStepIndex, dueDate } = card.srs;
 
   // Nếu đang ở learning steps
   if (state === 'new' || state === 'learning') {
-    if (grade >= 3) {
+    if (grade >= 3) { // Good hoặc Easy
       if (learningStepIndex < LEARNING_STEPS.length - 1) {
         // Chuyển sang bước learning tiếp theo
         learningStepIndex += 1;
         state = 'learning';
-        // Đặt dueDate cho bước tiếp theo (tính bằng phút)
         dueDate = new Date();
         dueDate.setMinutes(dueDate.getMinutes() + LEARNING_STEPS[learningStepIndex]);
       } else {
@@ -20,9 +20,15 @@ function sm2(card, grade) {
         state = 'review';
         learningStepIndex = 0;
         repetitions = 0;
-        interval = 1;
         easeFactor = 2.5;
         dueDate = new Date();
+        if (grade >= 4) { // Easy
+          // Random interval 3, 4, 5 ngày
+          const fuzz = Math.floor(Math.random() * 3) - 1; // -1, 0, 1
+          interval = EASY_INTERVAL + fuzz;
+        } else { // Good
+          interval = 1;
+        }
         dueDate.setDate(dueDate.getDate() + interval);
       }
     } else {
@@ -62,17 +68,14 @@ function sm2(card, grade) {
       const fuzzPercent = 0.05;
       let min = Math.floor(interval * (1 - fuzzPercent));
       let max = Math.ceil(interval * (1 + fuzzPercent));
-      // Nếu interval lớn, đảm bảo fuzz ít nhất ±1 ngày
       if (interval > 20) {
         min = Math.min(min, interval - 1);
         max = Math.max(max, interval + 1);
       }
       fuzzedInterval = Math.floor(Math.random() * (max - min + 1)) + min;
     }
-    // Tính ngày ôn tiếp theo
     dueDate = new Date();
     dueDate.setDate(dueDate.getDate() + fuzzedInterval);
-    // Lưu lại lịch sử
     card.reviewHistory.push({
       date: new Date(),
       grade,
