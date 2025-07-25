@@ -7,6 +7,7 @@ const sharedVocabCardSchema = new mongoose.Schema({
   audio: String,
   phonetic: String,
   image: String, // URL hình ảnh minh họa (nếu có)
+  definition: String, // Định nghĩa tiếng Anh để đặt ở mặt sau
   tags: [String],
   deck: { type: mongoose.Schema.Types.ObjectId, ref: 'Deck', required: true },
 });

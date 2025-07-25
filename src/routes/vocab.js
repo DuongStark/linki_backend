@@ -1,121 +1,10 @@
 const express = require('express');
 const router = express.Router();
 const { authMiddleware } = require('../middleware/auth');
-const VocabCard = require('../models/VocabCard');
-const sm2 = require('../srs/sm2');
 const SharedVocabCard = require('../models/SharedVocabCard');
 const UserVocabProgress = require('../models/UserVocabProgress');
 const Deck = require('../models/Deck');
 const { DailyStudyQueue } = require('../models/UserVocabProgress');
-
-// Tạo từ mới
-router.post('/', authMiddleware, async (req, res) => {
-  const { word, meaning, example, audio, phonetic } = req.body;
-  const card = new VocabCard({ user: req.user.id, word, meaning, example, audio, phonetic });
-  await card.save();
-  res.status(201).json(card);
-});
-
-// Lấy tất cả từ của user hoặc chỉ các từ đến hạn nếu có dueDate
-router.get('/', authMiddleware, async (req, res) => {
-  const { allDue } = req.query;
-  const now = new Date();
-  if (allDue === 'true') {
-    // Trả về tất cả thẻ review đến hạn và thẻ mới, không giới hạn quota
-    const reviewCards = await VocabCard.find({
-      user: req.user.id,
-      'srs.state': 'review',
-      'srs.dueDate': { $lte: now }
-    });
-    const newCards = await VocabCard.find({
-      user: req.user.id,
-      'srs.state': 'new'
-    });
-    // Xáo trộn từng nhóm
-    const cards = [...shuffleArray(reviewCards), ...shuffleArray(newCards)];
-    return res.json(cards);
-  }
-  // Giới hạn mặc định
-  const MAX_NEW = 20;
-  const MAX_REVIEW = 100;
-  // Lấy thẻ review đến hạn (ưu tiên)
-  let reviewCards = await VocabCard.find({
-    user: req.user.id,
-    'srs.state': 'review',
-    'srs.dueDate': { $lte: now }
-  });
-  reviewCards = shuffleArray(reviewCards).slice(0, MAX_REVIEW);
-  // Lấy thẻ mới (chưa học)
-  let newCards = await VocabCard.find({
-    user: req.user.id,
-    'srs.state': 'new'
-  });
-  newCards = shuffleArray(newCards).slice(0, MAX_NEW);
-  const cards = [...reviewCards, ...newCards];
-  res.json(cards);
-});
-
-// Lấy tất cả từ của user (không filter dueDate hay trạng thái) - dùng cho trang quản lý từ vựng
-router.get('/all', authMiddleware, async (req, res) => {
-  let query = { user: req.user.id };
-  const cards = await VocabCard.find(query);
-  res.json(cards);
-});
-
-// API: Thời gian (giờ, phút) đến thẻ due tiếp theo
-router.get('/next-due', authMiddleware, async (req, res) => {
-  const now = new Date();
-  const { deckId, deckType } = req.query;
-
-  let nextCard = null;
-
-  if (deckType === 'shared' && deckId) {
-    // Truy vấn UserVocabProgress cho deck shared
-    nextCard = await UserVocabProgress.findOne({
-      user: req.user.id,
-      deck: deckId,
-      'srs.dueDate': { $gt: now }
-    }).sort({ 'srs.dueDate': 1 });
-    if (nextCard) nextCard = nextCard.srs;
-  } else {
-    // Truy vấn VocabCard cho deck cá nhân
-    nextCard = await VocabCard.findOne({
-      user: req.user.id,
-      'srs.dueDate': { $gt: now }
-    }).sort({ 'srs.dueDate': 1 });
-    if (nextCard) nextCard = nextCard.srs;
-  }
-
-  if (!nextCard) return res.json({ hours: null, minutes: null });
-
-  const diffMs = nextCard.dueDate - now;
-  const totalMinutes = Math.ceil(diffMs / 60000);
-  const hours = Math.floor(totalMinutes / 60);
-  const minutes = totalMinutes % 60;
-  res.json({ hours, minutes });
-});
-
-// API: Import toàn bộ bộ từ mẫu vào tiến trình học của user (chỉ tạo nếu chưa có)
-router.post('/import-shared', authMiddleware, async (req, res) => {
-  try {
-    // Lấy toàn bộ từ mẫu
-    const sharedCards = await SharedVocabCard.find({});
-    const userId = req.user.id;
-    let imported = 0;
-    for (const card of sharedCards) {
-      // Kiểm tra nếu user đã có tiến trình học với từ này thì bỏ qua
-      const exists = await UserVocabProgress.findOne({ user: userId, vocab: card._id });
-      if (!exists) {
-        await UserVocabProgress.create({ user: userId, vocab: card._id });
-        imported++;
-      }
-    }
-    res.json({ message: `Đã import ${imported} từ vào tiến trình học của bạn.` });
-  } catch (err) {
-    console.error('Import shared vocab error:', err);
-    res.status(500).json({ message: 'Lỗi khi import bộ từ mẫu.' });
-  }
-});
 
 // Lấy danh sách deck user có quyền truy cập (deck mẫu + deck cá nhân)
 router.get('/decks', authMiddleware, async (req, res) => {
@@ -138,8 +27,14 @@ router.post('/decks/import/:deckId', authMiddleware, async (req, res) => {
   try {
     const deckId = req.params.deckId;
     const userId = req.user.id;
+    // Debug log
+    console.log('Import deckId:', deckId);
     // Lấy toàn bộ từ mẫu trong deck
     const sharedCards = await SharedVocabCard.find({ deck: deckId });
+    console.log('Found sharedCards:', sharedCards.length);
+    if (sharedCards.length > 0) {
+      console.log('SharedCard IDs:', sharedCards.map(card => card._id.toString()));
+    }
     // Lấy toàn bộ tiến trình học đã có của user với deck này
     const existing = await UserVocabProgress.find({ user: userId, deck: deckId }).select('vocab');
     const existingVocabIds = new Set(existing.map(e => e.vocab.toString()));
@@ -151,6 +46,7 @@ router.post('/decks/import/:deckId', authMiddleware, async (req, res) => {
         vocab: card._id,
         deck: deckId
       }));
+    console.log('To insert:', toInsert.length);
     if (toInsert.length > 0) {
       await UserVocabProgress.insertMany(toInsert);
     }
@@ -175,6 +71,8 @@ router.get('/decks/:deckId/progress', authMiddleware, async (req, res) => {
     audio: p.vocab.audio,
     image: p.vocab.image,
     tags: p.vocab.tags,
+    definition: p.vocab.definition,
+    pos: p.vocab.pos,
     srs: p.srs,
     reviewHistory: p.reviewHistory,
     vocabId: p.vocab._id,
@@ -265,14 +163,40 @@ router.get('/decks/:deckId/due', authMiddleware, async (req, res) => {
     }
   }
   // 3. Lấy chi tiết các thẻ trong queue (chỉ populate trường cần thiết)
-  const cards = await UserVocabProgress.find({ _id: { $in: queue.cardIds } })
-    .populate('vocab', 'word meaning example phonetic audio image tags');
+  let cards = await UserVocabProgress.find({ _id: { $in: queue.cardIds } })
+    .populate('vocab', 'word meaning example phonetic tags image definition pos');
   // Lọc chỉ trả về các thẻ còn đến hạn trong ngày
   let filteredCards = cards.filter(card =>
     card.srs.state === 'new' ||
     (card.srs.state === 'learning' && new Date(card.srs.dueDate) <= now) ||
     (card.srs.state === 'review' && new Date(card.srs.dueDate) <= now)
   );
+  // Nếu không còn review/new đến hạn, trả về toàn bộ thẻ learning (bất kể dueDate)
+  if (filteredCards.length === 0) {
+    // Lấy toàn bộ thẻ learning chưa đến hạn (bất kể dueDate)
+    const allLearning = cards.filter(card => card.srs.state === 'learning');
+    if (allLearning.length > 0) {
+      filteredCards = allLearning;
+    }
+  }
+  // Trộn random các loại thẻ (learning, new, review) nếu có đủ 2 loại trở lên
+  const learning = filteredCards.filter(c => c.srs.state === 'learning');
+  const review = filteredCards.filter(c => c.srs.state === 'review');
+  const newCards = filteredCards.filter(c => c.srs.state === 'new');
+  let mixed = [];
+  if ((learning.length + review.length + newCards.length) > 1) {
+    // Trộn đều các loại, ưu tiên learning xuất hiện nhiều hơn một chút
+    let pools = [learning, newCards, review].filter(arr => arr.length > 0);
+    let maxLen = Math.max(...pools.map(arr => arr.length));
+    for (let i = 0; i < maxLen; i++) {
+      for (let arr of pools) {
+        if (arr[i]) mixed.push(arr[i]);
+      }
+    }
+    // Xáo trộn nhẹ để tránh lặp pattern
+    mixed = shuffleArray(mixed);
+    filteredCards = mixed;
+  }
   // KHÔNG random lại quota từ mới nếu đã có queue, chỉ lấy các thẻ đến hạn thực sự
   const mapCard = (p) => ({
     _id: p._id,
@@ -283,46 +207,35 @@ router.get('/decks/:deckId/due', authMiddleware, async (req, res) => {
     audio: p.vocab?.audio,
     image: p.vocab?.image,
     tags: p.vocab?.tags,
+    definition: p.vocab?.definition,
+    pos: p.vocab?.pos,
     srs: p.srs,
-    reviewHistory: p.reviewHistory,
     vocabId: p.vocab?._id,
     deck: p.deck,
   });
   res.json(filteredCards.map(mapCard));
 });
 
-// Update từ
-router.put('/:id', authMiddleware, async (req, res) => {
-  const card = await VocabCard.findOneAndUpdate(
-    { _id: req.params.id, user: req.user.id },
-    req.body,
-    { new: true }
-  );
-  res.json(card);
-});
-
-// Xoá từ
-router.delete('/:id', authMiddleware, async (req, res) => {
-  await VocabCard.deleteOne({ _id: req.params.id, user: req.user.id });
-  res.json({ success: true });
-});
-
-// Đánh giá SRS cho từ (review)
-router.post('/:id/review', authMiddleware, async (req, res) => {
+// Đánh giá SRS cho từ (review) - cho UserVocabProgress
+router.post('/progress/:id/review', authMiddleware, async (req, res) => {
   const { grade } = req.body;
-  // Thử tìm trong UserVocabProgress trước
   let card = await UserVocabProgress.findOne({ _id: req.params.id, user: req.user.id });
-  if (card) {
-    sm2(card, grade);
-    await card.save();
-    return res.json(card);
-  }
-  // Nếu không có, thử tìm trong VocabCard (từ cá nhân)
-  card = await VocabCard.findOne({ _id: req.params.id, user: req.user.id });
   if (!card) return res.status(404).json({ message: 'Not found' });
-  sm2(card, grade);
+  require('../srs/sm2')(card, grade);
   await card.save();
   res.json(card);
+});
+
+// API đếm số lượng thẻ learning trong deck cho user
+router.get('/decks/:deckId/learning-count', authMiddleware, async (req, res) => {
+  try {
+    const userId = req.user.id;
+    const deckId = req.params.deckId;
+    const count = await UserVocabProgress.countDocuments({ user: userId, deck: deckId, 'srs.state': 'learning' });
+    res.json({ count });
+  } catch (err) {
+    res.status(500).json({ message: 'Lỗi server khi đếm thẻ learning.' });
+  }
 });
 
 // Hàm xáo trộn mảng (Fisher-Yates)

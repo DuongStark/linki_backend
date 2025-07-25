@@ -1,6 +1,5 @@
 const webpush = require('web-push');
 const User = require('../models/User');
-const VocabCard = require('../models/VocabCard');
 
 // Hàm kiểm tra VAPID keys hợp lệ
 const checkVapidKeys = () => {
@@ -82,25 +81,26 @@ const sendDailyReminders = async () => {
       const tomorrow = new Date(today);
       tomorrow.setDate(tomorrow.getDate() + 1);
       
-      const dueCards = await VocabCard.countDocuments({
-        user: user._id,
-        'srs.dueDate': { $gte: today, $lt: tomorrow }
+      // Lấy tổng số từ cần học từ UserVocabProgress
+      const totalDue = await User.countDocuments({
+        _id: user._id,
+        'vocabProgress.dueDate': { $gte: today, $lt: tomorrow }
       });
       
       // Thêm từ quá hạn
-      const overdueCards = await VocabCard.countDocuments({
-        user: user._id,
-        'srs.dueDate': { $lt: today },
+      const overdueCards = await User.countDocuments({
+        _id: user._id,
+        'vocabProgress.dueDate': { $lt: today },
         'reviewHistory.0': { $exists: true }
       });
       
-      const totalDue = dueCards + overdueCards;
+      const totalDueWithOverdue = totalDue + overdueCards;
       
       // Tạo nội dung thông báo
       const payload = {
         title: 'Nhắc nhở học từ vựng',
-        body: totalDue > 0 
-          ? `Bạn có ${totalDue} từ cần ôn tập hôm nay!` 
+        body: totalDueWithOverdue > 0 
+          ? `Bạn có ${totalDueWithOverdue} từ cần ôn tập hôm nay!` 
           : 'Hãy học thêm từ mới hôm nay!',
         icon: '/logo192.png',
         data: {
